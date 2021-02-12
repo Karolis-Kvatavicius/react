@@ -1,0 +1,76 @@
+{
+    "goods": [
+      {
+        "id": "1",
+        "image": "https://post.healthline.com/wp-content/uploads/2020/09/Do_Apples_Affect_Diabetes_and_Blood_Sugar_Levels-732x549-thumbnail-1-732x549.jpg",
+        "name": "obuoliai",
+        "description": "lietuviški obuoliai",
+        "price": "0.85",
+        "category": "vaisiai"
+      },
+      {
+        "id": "2",
+        "image": "https://www.jessicagavin.com/wp-content/uploads/2019/02/carrots-7-1200.jpg",
+        "name": "morkos",
+        "description": "traškios, sultingos morkos",
+        "price": "0.49",
+        "category": "daržovės"
+      },
+      {
+        "id": "3",
+        "image": "https://gbc-cdn-public-media.azureedge.net/img75602.1426x713.jpg",
+        "name": "bulvės",
+        "description": "šviežios bulvės",
+        "price": "0.29",
+        "category": "daržovės"
+      },
+      {
+        "id": "4",
+        "image": "https://hungrybae.com/wp-content/uploads/2019/09/DSC_4484-1024x683.jpg",
+        "name": "tortas",
+        "description": "tortas su maskarponės sūriu",
+        "price": "10.99",
+        "category": "saldumynai"
+      },
+      {
+        "id": "5",
+        "image": "https://thesourcebulkfoods.com.sg/wp-content/uploads/2017/09/72-Dark-Choc.jpg",
+        "name": "šokoladas",
+        "description": "85% kakavos",
+        "price": "1.89",
+        "category": "saldumynai"
+      },
+      {
+        "id": "6",
+        "image": "https://groceries.morrisons.com/productImages/400/400745011_0_640x640.jpg?identifier=13b074c62482e7bdbc64f852aebfaba4",
+        "name": "alus",
+        "description": "5% šviesus, vokiškas",
+        "price": "0.99",
+        "category": "alkoholiniai gėrimai"
+      },
+      {
+        "id": "7",
+        "image": "https://img.loccitane.com/ocms/img/P.aspx?l=lt-LT&s=500&e=png&name=lavender-shea-butter-liquid-soap-loccitane&id=01SL500LV20_texture&v=2&nodef=true",
+        "name": "muilas",
+        "description": "skystas muilas su dozatoriumi",
+        "price": "3.19",
+        "category": "higienos priemonės"
+      },
+      {
+        "id": "8",
+        "image": "https://www.amway.com/medias/100957C-en-US-690px-01?context=bWFzdGVyfHJvb3R8MjkyNDZ8aW1hZ2UvanBlZ3xoMmQvaGQxLzg4Mzk5MTg3MTQ5MTAuanBnfGE4YmQzOWJhMzkyZmU0N2FmZDE2MzQzMTM1MmY5ZDgyYTE4ZGNhNzE2ZWU0MDdiYjU5M2U1N2Y0NzhkOWY1MzY",
+        "name": "dantų šepetėlis",
+        "description": "colgate, su lanksčia galvute",
+        "price": "1.45",
+        "category": "higienos priemonės"
+      },
+      {
+        "id": "9",
+        "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEBAPEA8VFRAVFxgWEBYYGBUWGBUYFRYXFhYZHxceHyghGRolGxgXITEhKCkrLi4wFx8zODUtNygvLisBCgoKDg0OGxAQGjclICUtLTAtLS0tLy8tNS0tLS0tLSsrLS0tLS0vKzUtLS0tLS0tLS0rLS0rLS0tLS0tLS0tLf/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAEBAAIDAQEAAAAAAAAAAAAAAQUGAwQHAgj/xAA/EAABBAEDAQYEAwUGBQUAAAABAAIDESEEEjFBBQYTIlFhMnGBoQdCkRQjsdHwUlNicsHhJDOSs/EVQ4KTsv/EABkBAQADAQEAAAAAAAAAAAAAAAACAwQBBf/EACIRAQACAgICAwEBAQAAAAAAAAABAgMREjEhQQQTUSIyUv/aAAwDAQACEQMRAD8A9rVRVHUVRVHBEVQERVBFUVQRVEQEREBERAREQEREBERBEVRBFFUQRRfSiCKKog+VF9KIJSKogqIqjoiKo4KoiAqiICIiAiIgIi1Lt/vLkwwProX9Sc2G/oc/p6qF7xSNynjxzedQznaXbUEGHvt2PK3Ls4GOn1WHn70vJqOED3cSfsP5rWo3NwXPFn6WSa6+5+6+tRpTVBx8OqcBe48V5gbH0rhZLZ7z14bqfGpHflk5+9k4JYHR7+Q2rP6bgV02d+tQ07fBL+CXOje0AFwG3ygm8+lDm6WM7Q05bGA3xSGgl2wuLjXALr3O9Pi+wWPkc6WPw5G7Iz8Yd+6e4DIA8N3GK5HQEHrX9t/1b9OP8eg6HvtpXytgcS17qz8TQT0LhgZB/RbMCvEO0OzwyJ1OfJFIW+WR3mZZvyvcQ42aNEu6Y9cv3d74y6SH95IdREAAyMDbM0U0ZBrgnnjPRaMef/pny/F90esoviJ9gO9QD0PPywvtamEREQEREERVRBFF9KIIVFUQfKKogqIqEBVEQFURAREQEREBEWI709ru0mnM7WB53NbRNfGdoPvmvpfouTOo27ETM6h0O+3bDoY/CjFyPBJyBTR7nizi/mvMg0NdvkYZDRB27y4kubuLfMdsVgCutE8c9ztHWTTyukDmxbnF3m87m30a04Au8n6crji05qmztbI74XNjjLwG4rgAtBOBXX3tefkvynb1cOP666cjdcN1maPwydrWvAY4VQcAeXPNg0a5GB1yuknbe1rj8PiNcBgtuhkkjGMXwLGFg49JrGOL98WodwNwdHtFj8rbt2eeg+/V7V7YDHmLW6Yt0t217LcwmhW8DJp1nBANcKER+JyzPbutEZiNuc7dupoBDSTQcfXnrfXmwsNqO1i1j2adhbIXHxNpccuN/mB2m/TGaXBrNI5zGSM1AMUzvJdUdvwbfLV4dfrfsAcVqHSRNLfCbI9xO3LgW3QNVh2AXH0H1rutnUPjSTbZBKC4vGXj8pHUFoJDv65Xd7b7OZ5NcyVzWii5sdDcCbDhjyHcfNe7n9cY1s20hzGtkNOaOgAJAt2SCS6gLyAfRd/saSYPcXsqxggZj4tu42QCc/T5KevaG3rP4ad6o9XpnRkNjfC7ww26ttDaaoeu3Hp7rdV+ftBJJFNG2NjQJpgHZoAkt2uxW3LRYI56VhfoFa8Vtw8/PSK2ERFapEREBERBEVUQRRfSiCKKogqqiqAqoFUBERAREQEREBab+I+seI44RGS1x37s8x/loethZzvF22zSxhzsvcdsYzRNdSOAtA7e7edqat2RjY0Gm2QCCACb9z6fNZ8+SIia+2n4+KZtFvTDnQAkutwkJujRIBHBIBIF5sVkBc+h7LYwEsAYXG37S7aT0cQSSOfiFH19F0X9rytkGnEL3ggFz9rhsBsgYI5oYwcUuN8sjpHhsAc4ARtJlNFlF4dt81AuAFkDJHNLHqXpbZljYw6zLJi3O8w2gGsGwQGnGD88LBdtd4+z4mPgjja7cCSHU5raobWjhoPpgA5OVruq7cklmkPiOjYx42MAtlN+IkYouLenO4i11+zJZNRqHSNdTvKeHOc4N5DXG2tIugDjLeKtTrTXmVc39Q7zBqYHxSjTTRwktLW+M1zAOaO5tAEcdPmV9Q9pTSapzdS+Q6VpJcC8bGXlvnB23iuc0RRGDunZM0kjDFMyKRjR4bmiO80NzdxNE1fAr7hYrtbuh5SzTymCB1l8e7lxAFl1nyAD4br3F2uRaJS1plX6LTvLImTcncBbXEhpGQ0cjN3ZAIC6Wr7ELnCKGQgg/E62H0skC3cc8YOaK817Sh1GmkDJC8AD92bPmZZHlP5bz5cH1C7Om7zyCVsjgdgBYxluDWtIDaFewGMcWpfVPcK5yR1LbdVpJGvMbXCV7XbWtaCHueAB5YyLJzir4Xv8BJa0uFOobh6Gsr8yydvu8aDURGtjrILnGjQstzjjp/Ney92e/DH6aIytfZJaCS23BowckEnn3NXkrRjtFe2bNSb/AOW8ovljrAPqL/VfS0MYiIgIiICIiCIqogiIiCoiqAiIgIiICIiAtF7zd6ZItUYIpmuIoFrBlhcQ3zE3myK/8rel5f3x7r68zzz6eLxPFuyHs3ceXBrFCq+XzNWXevC7BNYt/Tp9ryPmvfMXOAIDXZAN2b9W3Xp8841eTtr9l8WM6UGNxDXONWSGja9tijQ6ixwur2Xr3abe2XTv3jyvPwyNvNZFtI9Dzf0PQ7w9sftO0MjDWgU3jeeP0HWhY4+ayRSeXl6HOvHwxveXtnxpLYSAABnk0AMgGgBX9YrE6TWFpcC807rkLh1gLSQWkH812D98rpkErTWkaZL5J278k4va4mqon1HzWz90dZCyGR3iRgt/5bDv3OcDe5xBpoOBweAfnpjNM9wNAkDlZLXd39RBG2YjBxjn9OoXLVjWtpUvbe9N7h70iAEz6WaFz7czeD5y6iSBxYppN1zhYvt3vHHqWsklLmuFgtbJ6YbvbXnwLrFfVaY/tOYsdG97nNcQSDnLeDn0XXaS7B4UYwx2lOf1DLP7Vc5sjPM6N1lwPG48O6+bqubsnUGNklGgWnfjpVdfnf0XV0LQHUQKNk8U3ijS+Ndu3kV8Qs85r0H0UtR1CPKe5cenlNjrXF8LbIO35Hw+EG00C5KvNfCPY2G8ei0+IZW09h9m6jUvEEEBe80Q0Cg28W4nAFA5K7asS5S0w/Rvc7UOk7P0cjnbnOhYSaq/KOizK6fY+jEOnggH/txtZzfwtA5XcV0Mk9iIi64IiICIiAoqhQRERAVUVQEREBERAREQEREGPk7D0jpfHdpYTN/eGNhf/wBVWsN233w7M0Uv7PK6phR2MjcSN+bsDaPU5tbSvAvxJ0THdtTBt1UZk/zGNpP0qj+qheeMbWY687aat3ll1Paevl1RgftkdTAB8LGAbR7naQSepJWy9nd14ANrozYq7HN+i+tA5sZDmzO92UHA5sdOb/2XbilkF/vCcmuQADmqs/r/AAWG+WbPSx4q1d/Qdgwsva0Xd8fb3C5+8MIk0j4g0OdW1tGqdVcg8jHX2WPhmm3NAlL8/C4baH0uz74XN47DJNC91U0Hw6LS0ED0FeYg5966KG5WcYYTtPuzpJYmt3t8Vrdpc3GW4yATVHFlaT2t3Ykgb4hxH0Nj5V7m16VKwEAkNt49AXOAv0yQL+61jt3uyZHCRgLSD5gQSw3QsNJAacfL5UrMeWYnUyqyYomNxDToopKrbTTWSKFCz1WUYGybAJQCXAHcMEX658vX1XBPpQxxDpmloPlo3dDPWwccH1XONKxzWvD6GHN/+OSK5/8AIV029qYp6ZvX/hzrYpIvBZ+0wyUYpYbexxPRx/JXqaH3r33uh3dj0GmGnY5zvMXOc6rJd0sDgcLUPwT7Q3aeeBzjbHh7G2XNax46HgW4ONe6yHe3vs7TuPhNBYKo2CZHXRAbyQM5x/BW8oiNyomlrTxhvSLGd3O2WazTR6mPhw8wu9rhhw/VZNWxO1ExrwIiI4IiICIiAiIgiIiAqoiCoiICIiAiIgKE1yqvN/xO7bmjZqIS5sce1roSCQ9xII6H4d1j5jPvG9uMbTx05zpu0/bulZI2J07A93GbAxeTw3F8+i8c7+9q6X9vn1HiW14YG7QSXFrGg105x9Fjey9dLFpmzTyGYy06KOi4nd0v0Pr7dFktT2pA0tbqoWs1NgNYXNdta7hxfQDRVnr7WsmTJNo1puxYa0nlEsbB2jCYvGMhYw4AePMTnAaCbGOVXd5dEwHzveemNoND9a+i5O1tPBqGMjlYxgDbveAYxYaDvBc3nAvm6A5XR03czSN3F4c5v+OQAtoddhAGb5PQKmIp3LRM39Gv/ECNsZbp208itx6fKxkr57sayfWSsJ1W5rGkyROPOKGAMNBIFm+L60O7pNJpIwXBmnja38zafuF4Jc5p6D65yOVl3Sxadv7saUeNt6+G4AkAufXIGRxX3K7uutRCP9dzL7EsJMgMb3tjw4uG1hdwY2BxAcenQYok4CxkZhbM6PwwLHkYwyNka34QTTsn/S6NLqwdvvk1Gw3JDtdTbos2UAfI6nD2vgDHC7WtkZvbK2SETEje5zWua1rW3ve3Ja6tw5rzjrkc46Ti2+nbd2PpZCSYW77zt2k7r6/4zXJJ62Vie0O72jbKI2OkEzh5GBpLXvokkudzg5APFJr3NZGHNEswPLgGPcR5ceGQ0sFOb8IIG4GuLx0PbOqdE+OHQgsa7zF4IDHE007MUQemc2V2It+o2mrZ+5sc+gg1TmyBsrpNobmg2NhILnDO0mQ8D8l4WJcNE+cynVEuHxNk3SNLj6EDgZFHHz4XcEGokhibFMWzD/mOdtaXgiz5MVR4/W1x6bsSJpdE1viO3Auy4Stfg3u+BwAJdeD0TlvuXOOunqP4cMijhkiYfOXeI4EuJ8wA/NkAEEfpa3BeU/h9rH/+qOjM1gwO3tLSyy14qmHqBm64terLbhndIedniIvOhERWqRERAREQEREEREQECIgqIiAiIgIiIC83/Gfs0Phg1DoDI2MkOIO3buoNLiPNV2MGgSvSF0u2ezWanTzaaS9kjS0kci+CPcGj9Fy0bjSVbcZ2/NPaWtrUEsPkYbjLSAW20BxB/X14WEeXPk8z3X/aomq49/ZeldrfhTrY3MEb2zNc7bubbdlnBcDePcXVLA97O6M/Z72Nmc0h4tjmkkEitwyAQRY+yo48YaucWlgP2yYlkMrf3bS3fQp1DAs4vaCaC7ev1cLagijAgZZG47jIXUSSfTjyj62ui4Zu/boAVNn+wwqp0si8u1Bqmt203dtB8MPdva23XYHtjBsGsrhnlc9xc8249VwuoVZOf65VsY8xHp1+6HJ9Vz/Xumlm2vvacA0brPA/r2XzZ/ogf6LjL6/Iff2/QLsS42fQdqPltsm98bG7iAdknkqiZRwyzxxdLnm7zQtc1jA9rKBjc15BYDeCCM+ZvArHXoNchhd6c45zXJ/gmr0ocWeWg2w49aoUSOlHH1UeETKf2TEM1L3pm8zTGx7btlbmgYoBzCSHNHNXyujJ2tPM1rJQ42Tsk4qugLQG3zyD9FjWuFDJAv5n7LYOx+zpNUxsGmfvmL7fCDstgDSHhxIByCHDkYIxanGOPxG2Sfctq/CHsKd2rGsDa07N43WPM6toaM+jrPTC9rWA7kd33aHSDTuk3u3ueSLobjgC+gAH3WfWmsahivblIiIpICIiAiIgIUUKAiIgiqiqCooqgIiICIiAiIgLQvxj7MEuhbP1geD77ZPIQPqWn6LfVhe+WhM+g1cTRbjG4tHq5nnaP1aFy0bh2s6l+aRH0A+39ZXJNpDjm/fhdzQae3j+Gc/zWZm0xLTuZVDBAIJ/XB4WG99S3VrtrL4ne9Hn09/ZcElXVZ+f+i2OHSto7XZ48wLK+pwVjddpHNvdwOOD9woxfcpTVi3fP6ELnizxweaI4XCOTX8b+y5tOMkjOK4qrP8AK1NF3oT5qLaAog+pOP5rde4HdmHXSTeLvDY2Udpq3ScAnqALwtO0rXeY3kcV9vuThex/hDpC3SSzFtGSQj6RgNH3tSxxuyOSdV2x8H4OaSv3uqmc4cFoYwV8iHWfqsz3a/DrSaLUN1Mckr5Gghm8tppcC0nytFmiR9VuSLVxhkm9pERFJEREQEREBERAUREBFEQEUVQVVREFREQEREBERAXxMzc1zfUEfqKX2iD84dmQU4tdgjBJ4xgrOzxEMGA9v5dzi9tV0I4Hz/knbekbDrtVGQXN8VxaAacA7z1fGA4VeFzRwSV/w0u2hdYa527PmYc5vovLyf6elj6Y58YDW7rjBvG10o+1eX+a6Or0lMHhua67NggewoO+qzM+oaXEOiLj8O5prPGBfF+pXR7RjZZa52BhocMYwfOeSoRKbUdUwty4frgppQ2iR8J9D6Lv9oaV7T5GmgB6Z6nk55XULKGQD6gj1+XzWiJ3Cqe3ZijHkdZB8xz7gmz7r9F909KItDpWAV+6YT83NDnH52SvBOytGJJY4a+JzG8/2nBo/j9l+kGgAADgcK/DHmZZ88+IhURFoZxERAREQEREBERBFFVEBREQEUVR1VV8qo4qqiqAiIgIiICIiDyzv9pDH2g6Rjb8aNrnDBDtvkot6igL+YWB2wPcLJEzTbAQQHgZw4fl9j6LdfxR04rSzZBDnR2P8QDh8vhOfdaa576Ilj21X7xvxOaeR4fXpZHK875EavLfgndYcrDqGfHRi5p7Q4UP7LgcH5rGSOjc7Y+GTOS4OBbQFkkdBXou9DEyj+zSh5djaHUBWbMZwHXX6rh1MkzGP/aGsqtrSYwxxJ/xjpQOQqF7XNbAxziTKCSbosc0+tA9fmum0HcK4vPyzillJnsIeRE5hAq929p3enW6tY2NvmBB45wr6qrNt/D+Df2hpmluA7cbH92xzx9w1e6LyX8IdLu1UspF7IyB1ovcK+zXfdetLZhj+WPNP9CIitVCIiAiIgIiICiKIBUREERFEFRRVHVVXyqjiqr5VQVVREFREQEREGu9/tM1+hlJF7C149qcAT/0krzVr30CGB7W8gh5A+RAth+y9i7U03iwTRf22OaOuS0gYXi2mgdbXNnMMv8AZDTmuWgmwTjgj1WL5UeYlr+NPiYc2qdA4APd4Q5ALS8X/nGR/so6CQNAhlLvzB4cHN83QBxwKA/VfbmuDv3mna8H4njdE5oyScfEOc4WO1WjikcHOfMxxNMprXDJwAQbHQZ9OVkhqdTtIybQ2Zrd+XGm17C65NfxWLaAM1zZwb9uvqu/q8k7dQDWGtNX6Ak5tdMtN0RixRPWs37cK6iuz1z8IdHt0s0lfG8NHuI2j/Vzlvi17uDpvD7O0wPLmmT/AOxxePsQthXoUjVYYLzu0iIikiIiICIogqiKIKoiiAoiiAiiqAiIjqoiI4qoREBVEQFURAREQF4z2uKlnAwN7v8AuEfwVRZfldQ0/G7l0e68z3ska9xc0OFBxJHJ6H5D9Fz61oE1AUPDccYzSiLF7a2BfxF/lcfrtOV0Yvj+n+oRFZVCz9GdiD/htOB/dR//AIC7qIvSjp58iIi64IiIIiIgFREQRCiIIVCiIIqiIP/Z",
+        "name": "ledai",
+        "description": "šokoladiniai, Baltoji Varnelė",
+        "price": "0.78",
+        "category": "šaldyti produktai"
+      }
+    ]
+  }
