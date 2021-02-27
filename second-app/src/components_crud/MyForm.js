@@ -80,21 +80,24 @@ export default class MyForm extends Component {
 
     render() {
         return (
-            <div>
-                <form onSubmit={this.handleSubmit}>
+            <div className="row mt-5">
+                <div className="col">
+                    <h2 className="mb-5">Enter new user</h2>
+                    <form onSubmit={this.handleSubmit}>
 
-                    <label>Name</label>
-                    <input type="text" name="name" onChange={this.handleChange} value={this.state.name} /><br></br>
+                        <label className="text-success">Name</label>
+                        <input className="form-control w-50" type="text" name="name" onChange={this.handleChange} value={this.state.name} />
 
-                    <label>Email</label>
-                    <input type="text" name="email" onChange={this.handleChange} value={this.state.email} /><br></br>
+                        <label className="text-secondary mt-4">Email</label>
+                        <input className="form-control w-50" type="text" name="email" onChange={this.handleChange} value={this.state.email} />
 
-                    <label>Password</label>
-                    <input type="password" name="password" onChange={this.handleChange} value={this.state.password} /><br></br>
+                        <label className="text-warning mt-4">Password</label>
+                        <input className="form-control w-50" type="password" name="password" onChange={this.handleChange} value={this.state.password} />
 
-                    <input type="submit" name="submit" value={this.state.submit_btn} /><br></br>
+                        <input className="form-control btn btn-success w-50  mt-4" type="submit" name="submit" value={this.state.submit_btn} />
 
-                </form>
+                    </form>
+                </div>
                 <FormList usersList={this.state.users} deleteUser={this.deleteUser} editUser={this.editUser} />
             </div>
         );
