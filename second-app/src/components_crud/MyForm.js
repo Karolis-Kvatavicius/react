@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import FormList from "./FormList"
+import swal from 'sweetalert'
 
 export default class MyForm extends Component {
 
@@ -7,7 +8,7 @@ export default class MyForm extends Component {
         super();
         this.state = {
             submit_btn: "Submit",
-            users: [],
+            users: JSON.parse(localStorage.getItem('myList')),
             id: Date.now(),
             name: '',
             email: '',
@@ -20,10 +21,27 @@ export default class MyForm extends Component {
     }
 
     deleteUser = (userId) => {
-        let updatedUsers = this.state.users.filter((user) => user.id != userId);
-        this.setState({
-            users: updatedUsers
-        });
+        swal({
+            title: "Are you sure?",
+            text: "Once deleted, you will not be able to recover this user info!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    let updatedUsers = this.state.users.filter((user) => user.id != userId);
+                    this.setState({
+                        users: updatedUsers
+                    });
+                    localStorage.setItem('myList', JSON.stringify(updatedUsers));
+                    swal("Poof! User has been deleted!", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Your user info is safe!");
+                }
+            });
     }
 
     editUser = (user) => {
@@ -38,8 +56,9 @@ export default class MyForm extends Component {
 
     handleSubmit = (evt) => {
         evt.preventDefault();
+        let updatedUsers;
         if (evt.target.elements.submit.value == "Submit") {
-            let updatedUsers = [
+            updatedUsers = [
                 ...this.state.users,
                 {
                     id: this.state.id,
@@ -48,40 +67,38 @@ export default class MyForm extends Component {
                     password: this.state.password
                 }
             ]
-
-            this.setState({
-                users: updatedUsers,
-                id: Date.now(),
-                name: "",
-                email: "",
-                password: ""
-            })
+            swal("Congrats! You entered a new user!");
         } else {
-            this.setState({
-                users: this.state.users.map((user) => {
-                    if (user.id == this.state.id) {
-                        user = {
-                            id: this.state.id,
-                            name: this.state.name,
-                            email: this.state.email,
-                            password: this.state.password
-                        }
+            updatedUsers = this.state.users.map((user) => {
+                if (user.id == this.state.id) {
+                    user = {
+                        id: this.state.id,
+                        name: this.state.name,
+                        email: this.state.email,
+                        password: this.state.password
                     }
-                    return user;
-                }),
-                id: Date.now(),
-                name: "",
-                email: "",
-                password: "",
-                submit_btn: "Submit"
-            });
+                }
+                return user;
+            })
+            swal("User info has been updated!");
         }
+
+        this.setState({
+            users: updatedUsers,
+            id: Date.now(),
+            name: "",
+            email: "",
+            password: "",
+            submit_btn: "Submit"
+        });
+
+        localStorage.setItem('myList', JSON.stringify(updatedUsers));
     }
 
     render() {
         return (
             <div className="row mt-5">
-                <div className="col">
+                <div className="col col-lg-6 col-12 mb-5">
                     <h2 className="mb-5">Enter new user</h2>
                     <form onSubmit={this.handleSubmit}>
 
