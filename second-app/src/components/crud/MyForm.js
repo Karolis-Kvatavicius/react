@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { React, Component } from 'react'
 import FormList from "./FormList"
 import swal from 'sweetalert'
 
@@ -8,7 +8,7 @@ export default class MyForm extends Component {
         super();
         this.state = {
             submit_btn: "Submit",
-            users: JSON.parse(localStorage.getItem('myList')),
+            users: (JSON.parse(localStorage.getItem('myList')) === null) ? [] : JSON.parse(localStorage.getItem('myList')),
             id: Date.now(),
             name: '',
             email: '',

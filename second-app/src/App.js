@@ -14,10 +14,10 @@ function App() {
       </div>
       <Navi />
       <Switch>
-        <Route exact path="react/" component={Shop} />
-        <Route exact path="react/crud" component={MyForm} />
-        <Route exact path="react/post" component={PostHooks} />
-        <Route exact path="react/posts-list" component={List} />
+        <Route exact path="/" component={Shop} />
+        <Route exact path="/crud" component={MyForm} />
+        <Route exact path="/post" component={PostHooks} />
+        <Route exact path="/posts-list" component={List} />
         <Route component={Not_Found} />
       </Switch>
     </div>
