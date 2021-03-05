@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaTrashAlt } from 'react-icons/fa';
+import { BiEditAlt } from 'react-icons/bi';
 
 export default function FormList(props) {
     if (props.usersList.length != 0) {
@@ -16,8 +18,8 @@ export default function FormList(props) {
                                         <span className="text-warning">{user.password}</span>
                                     </div>
                                     <div>
-                                        <button className="btn btn-info mx-1" onClick={() => { props.editUser(user) }}>Edit</button>
-                                        <button className="btn btn-danger mx-1" onClick={() => { props.deleteUser(user.id) }}>Delete</button>
+                                        <button className="btn btn-info mx-1" onClick={() => { props.editUser(user) }}><BiEditAlt /></button>
+                                        <button className="btn btn-danger mx-1" onClick={() => { props.deleteUser(user.id) }}><FaTrashAlt /></button>
                                     </div>
                                 </li>
                             </div>
