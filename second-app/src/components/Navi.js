@@ -14,10 +14,10 @@ export default function Navi() {
                 </DropdownToggle>
 
                 <DropdownMenu>
-                    <DropdownItem href="/">SHOP</DropdownItem>
-                    <DropdownItem href="/crud">CRUD</DropdownItem>
-                    <DropdownItem href="/post">POST</DropdownItem>
-                    <DropdownItem href="/posts-list">POSTS LIST</DropdownItem>
+                    <DropdownItem href="react/">SHOP</DropdownItem>
+                    <DropdownItem href="react/crud">CRUD</DropdownItem>
+                    <DropdownItem href="react/post">POST</DropdownItem>
+                    <DropdownItem href="react/posts-list">POSTS LIST</DropdownItem>
                 </DropdownMenu>
             </Dropdown>
         </div >
