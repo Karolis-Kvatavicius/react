@@ -7,7 +7,7 @@ export default function Navi() {
     const toggle = () => setDropdownOpen(prevState => !prevState);
 
     return (
-        <div>
+        <div className="my-3">
             <Dropdown isOpen={dropdownOpen} toggle={toggle}>
                 <DropdownToggle variant="success" id="dropdown-basic">
                     Pages

@@ -1,27 +1,14 @@
 import React from 'react'
 import data from './data/items.json'
 
-function displaySum(e) {
-  e.target.innerText = data.goods.reduce((sum, currentItem) => {
-    return sum + +currentItem.price
-  }, 0)
-}
-
-function filterVegetables() {
-  document.querySelector('#goodsList').innerHTML = ''
-  data.goods
-    .filter((currentItem) => {
-      if (currentItem.category == 'daržovės') {
-        return currentItem
-      }
-    })
-    .forEach((value) => {
-      document.querySelector('#goodsList').innerHTML +=
-        '<ItemCard key={value.id} itemInfo={value} />'
-    })
-}
-
 export default function Jumbotron() {
+
+  const displaySum = (e) => {
+    e.target.innerText = data.goods.reduce((sum, currentItem) => {
+      return sum + +currentItem.price
+    }, 0)
+  }
+
   return (
     <section className="jumbotron text-center">
       <div className="container">
@@ -32,13 +19,12 @@ export default function Jumbotron() {
           don't simply skip over it entirely.
         </p>
         <p>
-          <a
-            href="#"
+          <button disabled
+            href=""
             className="btn btn-primary my-2 mr-2"
-            onClick={filterVegetables}
           >
             Filter vegetables
-          </a>
+          </button>
           <a href="#" className="btn btn-secondary my-2" onClick={displaySum}>
             Display sum of all goods
           </a>

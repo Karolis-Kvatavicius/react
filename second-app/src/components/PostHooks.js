@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { React, useState } from 'react'
 
 export default function PostHooks() {
 
@@ -12,7 +12,7 @@ export default function PostHooks() {
     }
 
     return (
-        <div className="col-4 mb-3">
+        <div className="col-4 mt-5">
             <div className="card mx-auto" style={{ width: "18rem" }}>
                 <img height="170" className="card-img-top" src={image} alt="Card image cap" />
                 <div className="card-body">

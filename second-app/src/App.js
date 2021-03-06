@@ -6,7 +6,6 @@ import Not_Found from "./components/Not_Found";
 import List from "./components/List";
 import Shop from "./components/Shop";
 
-
 function App() {
   return (
     <div className="container">
