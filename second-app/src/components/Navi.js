@@ -7,7 +7,7 @@ export default function Navi() {
     const toggle = () => setDropdownOpen(prevState => !prevState);
 
     return (
-        <div className="my-3">
+        <div className="sticky-top mx-5 my-3">
             <Dropdown isOpen={dropdownOpen} toggle={toggle}>
                 <DropdownToggle variant="success" id="dropdown-basic">
                     Pages
@@ -18,6 +18,7 @@ export default function Navi() {
                     <DropdownItem href="/react/crud">CRUD</DropdownItem>
                     <DropdownItem href="/react/post">POST</DropdownItem>
                     <DropdownItem href="/react/posts-list">POSTS LIST</DropdownItem>
+                    <DropdownItem href="/react/the-meal-db/a">MEALS API</DropdownItem>
                 </DropdownMenu>
             </Dropdown>
         </div >

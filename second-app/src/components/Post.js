@@ -44,7 +44,7 @@ export default class Post extends Component {
                         <button onClick={this.increaseLikes} className="btn btn-success">Like {this.state.likes}</button>
                         <button onClick={this.increaseHates} className="btn btn-danger mx-2">Hate {this.state.hates}</button>
                         <button onClick={this.reset} className="btn btn-info">Reset</button>
-                        <button onClick={this.props.changeStatus} className="btn btn-secondary">{this.props.status ? 'Undo' : 'Done'}</button>
+                        <button onClick={this.props.changeStatus} className="btn btn-secondary mt-2">{this.props.status ? 'Undo' : 'Done'}</button>
                     </div>
                 </div>
             </div>

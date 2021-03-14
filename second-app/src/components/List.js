@@ -34,10 +34,12 @@ export default class List extends Component {
 
     render() {
         return (
-            <div className="row mt-5">
-                {this.state.list.map(task => {
-                    return <Post changeStatus={() => this.do_undo(task.id)} key={task.id.toString()} id={task.id} status={task.status} taskContent={task.taskContent} />
-                })}
+            <div className="container">
+                <div className="row mt-5">
+                    {this.state.list.map(task => {
+                        return <Post changeStatus={() => this.do_undo(task.id)} key={task.id.toString()} id={task.id} status={task.status} taskContent={task.taskContent} />
+                    })}
+                </div>
             </div>
         )
     }

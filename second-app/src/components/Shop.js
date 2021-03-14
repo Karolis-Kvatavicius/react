@@ -4,7 +4,7 @@ import Main from './Main';
 
 export default function Shop() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Main />
       <Footer />

@@ -97,7 +97,7 @@ export default class MyForm extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <h1 className="text-center mt-4">My Simple CRUD App</h1>
                 <div className="row mt-5">
                     <div className="col col-lg-6 col-12 mb-5">

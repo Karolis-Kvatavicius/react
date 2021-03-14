@@ -12,13 +12,15 @@ export default function PostHooks() {
     }
 
     return (
-        <div className="col-4 mt-5">
-            <div className="card mx-auto" style={{ width: "18rem" }}>
-                <img height="170" className="card-img-top" src={image} alt="Card image cap" />
-                <div className="card-body">
-                    <button onClick={() => increaseLikes(likes + 1)} className="btn btn-success">Like {likes}</button>
-                    <button onClick={() => increaseHates(hates + 1)} className="btn btn-danger mx-2">Hate {hates}</button>
-                    <button onClick={() => reset()} className="btn btn-info">Reset</button>
+        <div className="container">
+            <div className="col-4 mt-5">
+                <div className="card mx-auto" style={{ width: "18rem" }}>
+                    <img height="170" className="card-img-top" src={image} alt="Card image cap" />
+                    <div className="card-body">
+                        <button onClick={() => increaseLikes(likes + 1)} className="btn btn-success">Like {likes}</button>
+                        <button onClick={() => increaseHates(hates + 1)} className="btn btn-danger mx-2">Hate {hates}</button>
+                        <button onClick={() => reset()} className="btn btn-info">Reset</button>
+                    </div>
                 </div>
             </div>
         </div>

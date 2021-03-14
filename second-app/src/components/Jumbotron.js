@@ -25,7 +25,7 @@ export default function Jumbotron() {
           >
             Filter vegetables
           </button>
-          <a href="#" className="btn btn-secondary my-2" onClick={displaySum}>
+          <a href="/react" className="btn btn-secondary my-2" onClick={displaySum}>
             Display sum of all goods
           </a>
         </p>
