@@ -21,25 +21,31 @@ export default function Recipe({ match }) {
         setMeals(...fetchedMeal.data.meals);
         setVideoId(getVideoId(fetchedMeal.data.meals[0].strYoutube));
         setIngredients(getIngredients(fetchedMeal.data.meals[0]));
-        console.log(fetchedMeal.data.meals);
+        // console.log(fetchedMeal.data.meals);
     }
 
     const getIngredients = (object) => {
+        console.log(object);
         let i = Object.entries(object).filter((prop) => {
             if (prop[0].match(/^strIngredient.*$/)) {
-                return prop[1];
+                return prop[0];
             }
         });
 
         console.log(i);
         let m = Object.entries(object).filter((prop) => {
             if (prop[0].match(/^strMeasure.*$/)) {
-                return prop[1];
+                return prop[0];
             }
         });
         let im = [];
+        // console.log(m);
         for (let index = 0; index < i.length; index++) {
             let ingredientImage = `https://www.themealdb.com/images/ingredients/${i[index][1]}-Small.png`;
+            // console.log(im);
+            if (i[index][1] === "" || i[index][1] === null && m[index][1] === "" || m[index][1] === null) {
+                continue;
+            }
             im.push([i[index][1], m[index][1], ingredientImage]);
         }
         return im;
@@ -72,7 +78,7 @@ export default function Recipe({ match }) {
 
                                 <li className="list-group-item" key={index}>
                                     <Link to={`/the-meal-db/ingredient/${ingredient[0]}`}>
-                                        <img src={ingredient[2]}></img>
+                                        <img style={{ maxWidth: "100px" }} src={ingredient[2]}></img>
                                     </Link> {ingredient[0] + " - " + ingredient[1]}</li>
                             ))}
                         </ul>

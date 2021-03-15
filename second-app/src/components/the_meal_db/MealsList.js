@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react'
 import { FaSearch } from 'react-icons/fa';
 import { Link, useHistory } from 'react-router-dom';
+import Categories from './Categories';
 import Meal from './Meal';
 import RandMeal from './RandMeal';
 
@@ -9,6 +10,8 @@ export default function MealsList({ match }) {
 
     const [meals, setMeals] = useState([]);
     const [randomMeal, setRandMeal] = useState([]);
+    const [categories, setCategories] = useState([]);
+    const [area, setArea] = useState([]);
     const history = useHistory();
 
     const mealsByFirstLetter = async () => {
@@ -21,9 +24,38 @@ export default function MealsList({ match }) {
         setMeals(fetchedMeals.data.meals);
     }
 
+    const mealsByMainIngredient = async () => {
+        const fetchedMeals = await axios(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${match.params.ingredient.replaceAll(" ", "_").toLowerCase()}`);
+        setMeals(fetchedMeals.data.meals);
+    }
+
+    const mealsByCategory = async () => {
+        const fetchedMeals = await axios(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${match.params.category.replaceAll(" ", "_").toLowerCase()}`);
+        // console.log(fetchedMeals);
+        setMeals(fetchedMeals.data.meals);
+    }
+
+    const mealsByArea = async () => {
+        const fetchedMeals = await axios(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${match.params.area.replaceAll(" ", "_").toLowerCase()}`);
+        console.log(fetchedMeals.data.meals);
+        setMeals(fetchedMeals.data.meals);
+    }
+
     const randMeal = async () => {
         const fetchedMeal = await axios(`https://www.themealdb.com/api/json/v1/1/random.php`);
         setRandMeal(...fetchedMeal.data.meals);
+    }
+
+    const listCategories = async () => {
+        const fetchedMeal = await axios(`https://www.themealdb.com/api/json/v1/1/categories.php`);
+        // console.log(fetchedMeal.data.categories);
+        setCategories(fetchedMeal.data.categories);
+    }
+
+    const listArea = async () => {
+        const fetchedMeal = await axios(`https://www.themealdb.com/api/json/v1/1/list.php?a=list`);
+        // console.log(fetchedMeal.data.categories);
+        setArea(fetchedMeal.data.meals);
     }
 
     const formSubmit = (e) => {
@@ -38,10 +70,18 @@ export default function MealsList({ match }) {
         console.log(match.params);
         if ('letter' in match.params) {
             mealsByFirstLetter();
+        } else if ('ingredient' in match.params) {
+            mealsByMainIngredient();
+        } else if ('category' in match.params) {
+            mealsByCategory();
+        } else if ('area' in match.params) {
+            mealsByArea();
         } else {
             mealsByName();
         }
         randMeal();
+        listCategories();
+        listArea();
     }, [match]);
 
     return (
@@ -63,17 +103,21 @@ export default function MealsList({ match }) {
                             <button type="submit" className="btn btn-primary mb-2"><FaSearch></FaSearch></button>
                         </form>
                     </div>
+                    <div className="row px-3">
+                        {area.map((item, index) => {
+                            return <Link key={index} className="mx-2" to={`/the-meal-db/area/${item.strArea}`}>{item.strArea}</Link>
+                        })}
+                    </div>
                     <div className="row">
                         {(meals ?? []).map((meal) => {
                             return <Meal key={meal.idMeal} meal={meal}></Meal>
                         })}
                     </div>
                 </div>
-                <div className="col-3">
-                    <div className="sticky-top">
-                        <h3 className="text-right">Random meal</h3>
-                        <RandMeal meal={randomMeal}></RandMeal>
-                    </div>
+                <div className="col-3 mt-5">
+                    <h3 className="text-center">Random meal</h3>
+                    <RandMeal meal={randomMeal}></RandMeal>
+                    <Categories categr={categories}></Categories>
                 </div>
             </div>
         </div>

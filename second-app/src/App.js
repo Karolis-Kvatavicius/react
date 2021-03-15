@@ -20,9 +20,12 @@ function App() {
         <Route exact path="/post" component={PostHooks} />
         <Route exact path="/posts-list" component={List} />
         <Route exact path="/the-meal-db/ingredient/:name" component={Ingredient} />
+        <Route exact path="/the-meal-db/area/:area" component={MealsList} />
         <Route exact path="/the-meal-db/:letter" component={MealsList} />
+        <Route exact path="/the-meal-db/category/:category" component={MealsList} />
         <Route exact path="/the-meal-db/by-name/:name" component={MealsList} />
         <Route exact path="/the-meal-db/recipe/:id" component={Recipe} />
+        <Route exact path="/the-meal-db/main-ingredient/:ingredient" component={MealsList} />
         <Route component={Not_Found} />
       </Switch>
     </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { Button } from 'bootstrap';
 
 export default function Ingredient({ match }) {
     const [ingredient, setIngredient] = useState([]);
@@ -28,6 +29,7 @@ export default function Ingredient({ match }) {
                 <div className="col">
                     <h2>{ingredient.strIngredient}</h2>
                     <p>{ingredient.strDescription ?? ""}</p>
+                    <Link className="btn btn-primary" to={`/the-meal-db/main-ingredient/${ingredient.strIngredient}`}>Check meals with this ingredient</Link>
                 </div>
             </div>
         </div>
